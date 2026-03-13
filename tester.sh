@@ -17,7 +17,7 @@ SUCCESS_LOG="success.log"
 # Number of groups should be 102 for me, but maybe there's a chance one or
 # two slip through, I don't fuckin know.
 number_of_groups=$(groups | wc -w)
-if [[ $? -eq 0 ]];
+if [[ $? -eq 0 ]]; then
     if [[ "${number_of_groups}" -le 10 ]]; then
         output_file="${FAILED_LOG}"
         reason="num_groups: ${number_of_groups}"
