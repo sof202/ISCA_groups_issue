@@ -26,6 +26,12 @@ cd "results-${datetime}"
 bash ../runner.sh
 ```
 
+All nodes that failed (did not set groups properly) send their results
+to `error.log` with a reason why. All nodes that did set the groups properly
+send their results to `success.log`. Both of these files have the same
+format. They are tab separated files with a heading indicating the content
+of each field.
+
 ## Cleanup
 
 There may  be some jobs that just never ran for whatever reason (I did
