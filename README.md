@@ -22,14 +22,7 @@ bash ../runner.sh
 
 ## Cleanup
 
-After all jobs have finished, you'll probably want to remove all the useless
-log files:
-
-```bash
-rm permissions*.{err,log}
-```
-
-There may also be some jobs that just never ran for whatever reason (I did
+There may  be some jobs that just never ran for whatever reason (I did
 my best to only go with nodes that are IDLE/ALLOC/MIX, but there could be
 some problems still). To cancel these jobs you'll need to get their IDs with
 
