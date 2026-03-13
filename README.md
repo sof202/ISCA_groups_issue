@@ -11,12 +11,18 @@ rate limited? I have no idea.
 
 ## Running
 
-Please create a directory called 'results' or something and cd inside. Then
-run the 'runner.sh' script with bash:
+Simply run the runner script with bash:
 
 ```bash
-mkdir results
-cd results
+bash runner.sh
+```
+
+You could do this in a new directory if you wanna run it multiple times:
+
+```bash
+datetime=$(date +%d-%m_%H-%M-%S)
+mkdir "results-${datetime}"
+cd "results-${datetime}"
 bash ../runner.sh
 ```
 
