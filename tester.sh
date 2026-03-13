@@ -7,8 +7,8 @@
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=1G
 #SBATCH --mail-type=END 
-#SBATCH --output=permissions%j.log
-#SBATCH --error=permissions%j.err
+#SBATCH --output=/dev/null
+#SBATCH --error=/dev/null
 #SBATCH --job-name=permissions
 
 FAILED_LOG="failed.log"
