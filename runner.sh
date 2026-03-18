@@ -233,7 +233,7 @@ nodes=(
 
 
 script_dir=$(dirname "$(realpath "$0")")
-logs=("success.log" "error.log")
+logs=("success.log" "failed.log")
 for log in ${logs[@]}; do
     echo -e "date\tjob_id\tpartition\tnode\tpid\treason" >> "${log}"
 done
